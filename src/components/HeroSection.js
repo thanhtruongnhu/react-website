@@ -22,7 +22,7 @@ function HeroSection() {
                     buttonStyle='btn--primary'
                     buttonSize='btn--large'
                 >
-                    WATCH TRAILER <i className='far fa-play-circle' />
+                    WATCH TRAILER <i className='far fa-play-circle' /> {/*Attach a play button next to WATCH NOW*/}
                 </Button>
             </div> 
         </div>
