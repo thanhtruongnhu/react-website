@@ -1,0 +1,18 @@
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed; /*IF it's fixed, it'll stay at the same spot all the time*/
+    z-index: -1; /*Ensures it is not put in front of other elements. In other words, it's in the very first layer (in the background)*/
+}
+
+.hero-container{
+    /* background: url('../../src/images/img-home.jpg') center center/cover no-repeat; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+    object-fit: contain;
+}
