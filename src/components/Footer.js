@@ -63,7 +63,7 @@ function Footer() {
                         </Link>
                     </div>
                     <small className="website-rights">TRVL 2020</small>
-                    <div className="social-icon">
+                    <div className="social-icons">
                         <Link 
                             className="social-icon-link facebook"
                             to="/"
