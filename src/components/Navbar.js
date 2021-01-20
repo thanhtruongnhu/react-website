@@ -13,7 +13,7 @@ function Navbar() {
     // Scalable button (for mobile version)
     const showButton = () => {
         if(window.innerWidth <= 960) {
-            setButton(false)
+            setButton(false) //Hide the button
         } else{
             setButton(true)
         }
@@ -24,7 +24,7 @@ function Navbar() {
         showButton();
     }, [])
 
-    // Invoke showButton (above) (after finishing this step, cannot see anything on the console cuz we haven't add any CSS the the nav bar)
+    // Invoke showButton (above)
     window.addEventListener('resize', showButton)
 
     return (
@@ -32,10 +32,11 @@ function Navbar() {
             <nav className="navbar">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                        TRVL <i className="fab fa-typo3"></i>
+                        TRVL <i class="fas fa-plane-departure"></i>
                     </Link>
+                    {/* Hamburger menu (This component 'menu-icon' is hidden in large-screen mode and show) */}
                     <div className="menu-icon" onClick={handleClick}> 
-                        <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+                        <i className={click ? 'fas fa-times' : 'fas fa-bars'} />  {/*If the 'menu-icon' is clicked, it show times symbol; On the other hand, if the 'menu-icon' is not clicked, it show hamburger symbol*/}
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
