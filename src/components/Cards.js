@@ -14,13 +14,13 @@ function Cards() {
                             src="/images/img-9.jpg" 
                             text="Cruise around the spectacular and unique karst landscape of Halong Bay"
                             label='Luxury'
-                            path='/service'
+                            path='/services'
                         />
                         <CardItem
                             src="/images/img-2.jpg" 
                             text="Uncover the world’s largest cave: Son Doong"
                             label='Adventure'
-                            path='/service'
+                            path='/services'
                         />                                              
                     </ul>
                     <ul className="cards__items">
@@ -29,19 +29,19 @@ function Cards() {
                             src='images/img-3.jpg'
                             text='Set Sail in the Indochinese Peninsula Sea visiting Uncharted Waters'
                             label='Adventure'
-                            path='/service'
+                            path='/services'
                         />
                         <CardItem
                             src='images/img-4.jpg'
                             text='Explore the hidden Ban Gioc waterfall deep insided the Tay Bac Jungle'
                             label='Adventure'
-                            path='/service'
+                            path='/services'
                         />            
                         <CardItem
                             src='images/img-8.jpg'
                             text="Weave through Ho Chi Minh City's bustling streets on the back of a motorcycle"
                             label='Luxury'
-                            path='/service'
+                            path='/services'
                         />                                                             
                     </ul>                    
                 </div>
