@@ -8,18 +8,18 @@ function Navbar() {
     const [button, setButton] = useState(true) 
 
     const handleClick = () => setClick(!click)
-    const closeMobileMenu = () => setClick(false)
+    const closeMobileMenu = () => setClick(false) //line 41: ul will be reset to false value 'nav-menu'
 
     // Scalable button (for mobile version)
     const showButton = () => {
         if(window.innerWidth <= 960) {
-            setButton(false) //Hide the button
+            setButton(false) //Hide the /services, /products, /sign-up categories
         } else{
             setButton(true)
         }
     }
 
-    // This hook allow us to render the button one time and not gonna show up anymore (It gonna pass empty into the showButton ???)   
+    // This hook allow us to render the button one time and not gonna show up anymore, every time the page is refreshed this hook invokes showButton (It gonna pass empty into the showButton )   
     useEffect(() => {
         showButton();
     }, [])
@@ -32,7 +32,7 @@ function Navbar() {
             <nav className="navbar">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                        TRVL <i class="fas fa-plane-departure"></i>
+                        VIETNAM <i class="fas fa-plane-departure"></i>
                     </Link>
                     {/* Hamburger menu (This component 'menu-icon' is hidden in large-screen mode and show) */}
                     <div className="menu-icon" onClick={handleClick}> 
